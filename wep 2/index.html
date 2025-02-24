@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8"> <!-- Đặt mã ký tự trang web là UTF-8 để hỗ trợ tiếng Việt -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Đảm bảo trang hiển thị tốt trên các thiết bị di động -->
+    <title>Photography Website</title> <!-- Tiêu đề của trang web -->
+    <link rel="stylesheet" href="styles.css"> <!-- Liên kết đến tệp CSS cho kiểu dáng của trang -->
+</head>
+<body>
+
+<!-- Phần header của trang -->
+<header>
+    <h1>Photography Website</h1> <!-- Tiêu đề chính của trang web -->
+</header>
+
+<!-- Thanh điều hướng (nav) -->
+<nav>
+    <a href="#" id="homeTab">Home</a> <!-- Liên kết đến trang chủ -->
+    <a href="#" id="albumTab">Album</a> <!-- Liên kết đến phần album -->
+    <a href="#" id="aboutTab">About</a> <!-- Liên kết đến phần giới thiệu -->
+    <a href="#" id="tainguyenTab">Tài Nguyên</a> <!-- Liên kết đến phần tài nguyên -->
+    
+</nav>
+
+<!-- Phần trang chủ (homeSection) -->
+<section id="homeSection">
+    <h2>Welcome to Our Photography Website</h2> <!-- Tiêu đề phần trang chủ -->
+    <p>Explore our beautiful collection of photographs.</p> <!-- Mô tả về trang web -->
+</section>
+
+<!-- Phần album (albumSection) ẩn ban đầu -->
+<section id="albumSection" style="display: none;">
+    <h2>Albums</h2> <!-- Tiêu đề phần album -->
+    <div id="albumList"></div> <!-- Đây sẽ là nơi hiển thị các album (sẽ được tạo động bằng JavaScript) -->
+</section>
+
+<!-- Phần giới thiệu (aboutSection) ẩn ban đầu -->
+<section id="aboutSection" style="display: none;">
+    <h2>About Us</h2> <!-- Tiêu đề phần giới thiệu -->
+    <p>Learn more about our photography services and team.</p> <!-- Mô tả về chúng tôi -->
+</section>
+
+<!-- Phần xem album (albumView) ẩn ban đầu -->
+<section id="albumView" style="display: none;">
+    <h2>Album View</h2> <!-- Tiêu đề phần xem album -->
+    <div id="albumImages"></div> <!-- Đây là nơi hiển thị các hình ảnh trong album (sẽ được tạo động bằng JavaScript) -->
+    <button onclick="backToAlbum()">Back to Albums</button> <!-- Nút quay lại phần album -->
+</section>
+
+
+<!-- Phần tài nguyên (resourcesSection) ẩn ban đầu -->
+<section id="tainguyenSection" style="display: none;">
+    <h2>Tài Nguyên</h2> <!-- Tiêu đề phần tài nguyên -->
+    <article>
+        <h3>Panel photoshop Master - Công cụ chỉnh ảnh chuyên nghiệp</h3>
+        <p>
+            Panel photoshop Master là một công cụ chỉnh sửa ảnh tự động được thiết kế cho dân làm nghề, studio và thợ ảnh chuyên nghiệp.
+            Với các tính năng chỉnh sửa mạnh mẽ như làm mịn da, xóa mụn, cân chỉnh màu sắc và nhiều công cụ khác,
+            đây là một lựa chọn không thể bỏ qua.
+        </p>
+        <img src="link_to_image_darkroom.jpg" alt="Darkroom Panel" style="width: 100%; max-width: 500px;">
+        <br>
+        <a href="link_to_download_darkroom" class="button">Tải về dùng thử</a> <!-- Nút tải về -->
+    </article>
+</section>
+
+<!-- Phần footer -->
+<!-- Phần footer (footer) -->
+<footer>
+    <div class="footer-container">
+        <div class="footer-info">
+            <p>&copy; 2025 Photography Website. All rights reserved.</p>
+        </div>
+        <div class="footer-social">
+            <a href="https://www.facebook.com" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com" target="_blank">Instagram</a>
+            <a href="https://www.twitter.com" target="_blank">Twitter</a>
+        </div>
+    </div>
+</footer>
+
+
+<script src="scripts.js"></script> <!-- Liên kết đến tệp JavaScript để xử lý logic trang web -->
+
+</body>
+</html>

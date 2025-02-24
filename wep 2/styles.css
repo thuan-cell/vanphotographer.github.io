@@ -1,0 +1,214 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  width: 100%;
+  height: 40px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  background-color: #898989;
+  padding: 0;
+  width: 100%;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #555;
+}
+
+#albumList {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2px;
+}
+
+.album-button {
+  display: inline-block;
+  width: 292px;
+  height: 450px;
+  margin: 5px;
+  padding: 5px;
+  background-color: #ddd;
+  border: 2px solid #ccc;
+  cursor: pointer;
+  text-align: center;
+}
+
+.album-thumbnail {
+  width: 100%;
+  height: 96.5%;
+  object-fit: cover;
+}
+
+#albumImages {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 5px;
+  margin-top: 10px;
+}
+
+#albumImages img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+button {
+  margin: 20px;
+  padding: 10px;
+  background-color: #d4d4d4;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #b4b4b4;
+}
+
+.album-modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: center;
+  align-items: center;
+}
+
+.album-modal img {
+  max-width: 90%;
+  max-height: 90%;
+}
+
+.close-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+}
+/* Phần Tài Nguyên */
+#tainguyenSection {
+  padding: 20px;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+#tainguyenSection h2 {
+  font-size: 2em;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+#tainguyenSection article {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+#tainguyenSection article h3 {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  color: #333;
+}
+
+#tainguyenSection article p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  color: #666;
+}
+
+#tainguyenSection img {
+  width: 100%;
+  max-width: 500px;
+  border-radius: 8px;
+  margin: 20px 0;
+}
+
+#tainguyenSection .button {
+  display: inline-block;
+  background-color: #333;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+#tainguyenSection .button:hover {
+  background-color: #555;
+}
+/* Phần Footer */
+footer {
+  background-color: #333; /* Màu nền tối */
+  color: #fff; /* Chữ màu trắng */
+  padding: 30px 20px; /* Khoảng cách giữa các phần tử trong footer */
+  font-size: 1em; /* Kích thước chữ trung bình */
+  text-align: center; /* Căn giữa nội dung */
+  margin-top: 40px; /* Khoảng cách từ phần content cuối cùng */
+}
+
+/* Chia bố cục phần tử trong footer */
+.footer-container {
+  max-width: 1200px;
+  margin: 0 auto; /* Căn giữa footer */
+}
+
+/* Phần thông tin bản quyền */
+.footer-info p {
+  font-size: 0.9em;
+  color: #bbb; /* Màu chữ nhạt hơn */
+  margin: 10px 0;
+}
+
+/* Phần liên kết mạng xã hội */
+.footer-social {
+  margin: 20px 0;
+}
+
+.footer-social a {
+  color: #fff; /* Màu chữ trắng */
+  text-decoration: none; /* Loại bỏ gạch chân */
+  margin: 0 15px; /* Khoảng cách giữa các liên kết */
+  font-weight: bold; /* Chữ đậm */
+  transition: color 0.3s ease; /* Hiệu ứng khi di chuột */
+}
+
+.footer-social a:hover {
+  color: #00aaff; /* Màu thay đổi khi hover (có thể là màu xanh biển) */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .footer-social {
+      flex-direction: column; /* Chuyển thành cột trên màn hình nhỏ */
+      align-items: center;
+  }
+}
